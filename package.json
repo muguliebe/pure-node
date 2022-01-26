@@ -1,0 +1,29 @@
+{
+  "name": "pure-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "author": "",
+  "license": "ISC",
+  "nodemonConfig": {
+    "exec": "npm run dev",
+    "ignore": [
+      "**/__tests__/**",
+      "*.test.js",
+      "*.spec.js"
+    ]
+  },
+  "scripts": {
+    "test": "NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit --maxWorker=1",
+    "test:dw": "NODE_ENV=test jest --runInBand --detectOpenHandles --watch --forceExit --maxWorker=1",
+    "dev": "NODE_ENV=dev node -r esm .",
+    "dw": "nodemon",
+    "start:dev": "NODE_ENV=dev node -r esm .",
+    "start:prd": "NODE_ENV=prd node -r esm .",
+    "start": "node -r esm ."
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.15"
+  }
+}
