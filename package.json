@@ -23,6 +23,8 @@
     "start": "node -r esm ."
   },
   "dependencies": {
+    "axios": "^0.25.0",
+    "ccxt": "^1.70.76",
     "esm": "^3.2.25",
     "nodemon": "^2.0.15"
   }
