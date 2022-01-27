@@ -27,5 +27,8 @@
     "ccxt": "^1.70.76",
     "esm": "^3.2.25",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
   }
 }
